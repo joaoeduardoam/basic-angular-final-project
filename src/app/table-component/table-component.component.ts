@@ -3,11 +3,12 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Student } from '../model/Student';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { AveragePipe } from "../pipe/average.pipe";
 
 @Component({
   selector: 'app-table-component',
   standalone: true,
-  imports: [CommonModule, MatIconModule, MatButtonModule],
+  imports: [CommonModule, MatIconModule, MatButtonModule, AveragePipe],
   templateUrl: './table-component.component.html',
   styleUrl: './table-component.component.css'
 })

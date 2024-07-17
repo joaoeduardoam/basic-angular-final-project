@@ -1,6 +1,6 @@
 <!-- <p>{{vector| json}}
 </p> -->
-<table class="table table-striped">
+<table class="table table-striped ">
     <thead>
         <tr>
             <th>#</th>
@@ -17,7 +17,7 @@
             <td>{{v.name}}</td>
             <td>{{v.grade1}}</td>
             <td>{{v.grade2}}</td>
-            <td>{{(v.grade1 + v.grade2)/2}}</td>
+            <td>{{v | average}}</td>
             <!-- <td><button class="btn btn-primary"  (click)="selectPerson(idx)"  >Select</button></td> -->
             <td><button mat-fab extended color="primary" value="Select" (click)="selectStudent(idx)"><mat-icon>view_list</mat-icon>Select</button></td>
         </tr>

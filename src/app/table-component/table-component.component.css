@@ -1,0 +1,13 @@
+form{
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+table{
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+    border: 1px solid rgb(50, 50, 146);
+  border-radius: 10px;
+}

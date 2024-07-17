@@ -29,6 +29,12 @@
       "name": "Teste 2",
       "grade1": 10,
       "grade2": 9
+    },
+    {
+      "id": 3,
+      "name": "Teste 3",
+      "grade1": 8,
+      "grade2": 9
     }
   ]
 }
