@@ -1,0 +1,25 @@
+<!-- <p>{{vector| json}}
+</p> -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Grade 1</th>
+            <th>Grade 2</th>
+            <th>Average</th>
+            <th>Select</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let v of vector; let idx = index">
+            <td>{{idx+1}}</td>
+            <td>{{v.name}}</td>
+            <td>{{v.grade1}}</td>
+            <td>{{v.grade2}}</td>
+            <td>{{(v.grade1 + v.grade2)/2}}</td>
+            <!-- <td><button class="btn btn-primary"  (click)="selectPerson(idx)"  >Select</button></td> -->
+            <td><button mat-fab extended color="primary" value="Select" (click)="selectStudent(idx)"><mat-icon>view_list</mat-icon>Select</button></td>
+        </tr>
+    </tbody>
+</table>
