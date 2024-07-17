@@ -17,8 +17,7 @@
             <td>{{v.name}}</td>
             <td>{{v.grade1}}</td>
             <td>{{v.grade2}}</td>
-            <td>{{v | average}}</td>
-            <!-- <td><button class="btn btn-primary"  (click)="selectPerson(idx)"  >Select</button></td> -->
+            <td>{{v | average  | number:'1.1'}}</td>
             <td><button mat-fab extended color="primary" value="Select" (click)="selectStudent(idx)"><mat-icon>view_list</mat-icon>Select</button></td>
         </tr>
     </tbody>

@@ -92,7 +92,7 @@ export class FormComponentComponent implements OnChanges{
       id : this.studentSelectedForm.id,
       name : this.studentSelectedForm.name,
       grade1 : this.studentSelectedForm.grade1,
-      grade2 : this.studentSelectedForm.grade1      
+      grade2 : this.studentSelectedForm.grade2      
     });
 
     this.btnSave = false;

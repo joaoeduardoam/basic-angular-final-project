@@ -8,7 +8,10 @@ import { Student } from '../model/Student';
 export class AveragePipe implements PipeTransform {
 
   transform(student: Student): number {
-    return (student.grade1+student.grade2)/2;
+    
+    const average = (student.grade1 + student.grade2) / 2;
+    return parseFloat(average.toFixed(1));
+    
   }
 
 }
