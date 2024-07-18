@@ -6,11 +6,12 @@ import { TableComponentComponent } from "../table-component/table-component.comp
 import { FormComponentComponent } from "../form-component/form-component.component";
 import { StudentService } from '../service/student.service';
 import { Student } from '../model/Student';
+import { HeaderComponentComponent } from "../header-component/header-component.component";
 
 @Component({
   selector: 'app-principal-component',
   standalone: true,
-  imports: [MatButtonModule, MatDividerModule, MatIconModule, TableComponentComponent, FormComponentComponent],
+  imports: [MatButtonModule, MatDividerModule, MatIconModule, TableComponentComponent, FormComponentComponent, HeaderComponentComponent],
   templateUrl: './principal-component.component.html',
   styleUrl: './principal-component.component.css'
 
