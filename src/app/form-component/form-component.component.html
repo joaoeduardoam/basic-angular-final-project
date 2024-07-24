@@ -3,8 +3,9 @@
 
 <section class="text-gray-400 bg-gray-900 body-font">
     <p></p>
-    <p></p>
-    <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+    <p></p> 
+    <!-- w-1/2 width half the screen -->
+    <div class="container w-1/2 px-5 py-10 mx-auto flex  items-center">  
         <div class="lg:w-2/6 md:w-1/2 bg-gray-800 bg-opacity-50 rounded-lg p-8 flex-1 flex-col md:ml-auto w-full mt-10 md:mt-0">
             <form [formGroup]="formStudent" >
 
@@ -12,7 +13,7 @@
                 <!-- VALIDATIONS -->
             
                 @if (formStudent.get('name').hasError('required') && formStudent.get('name').touched) {
-                <p class="alert alert-warning">The name field needs to be filled in.</p>
+                <p class="alert alert-warning ">The name field needs to be filled in.</p>
                 }
             
                 @if (formStudent.get('name').hasError('minlength') && formStudent.get('name').touched) {
@@ -70,22 +71,25 @@
                 </div>
                 <!-- <input type="number" class="form-control" formControlName="grade2" placeholder="Grade 2"> -->
                 
+                <p class="text-xs mt-3">Please, fill in all the fields.</p>
                 <div class="flex items-center justify-center gap-5">
                     <button value="Save" *ngIf="btnSave" (click)="save()" [disabled]="formStudent.invalid"
                         class="disabled:opacity-50 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg flex items-center" ><mat-icon>save</mat-icon>Save</button>
-                <!-- <button mat-fab extended color="primary" value="Save" *ngIf="btnSave" (click)="save()" [disabled]="formStudent.invalid"><mat-icon>save</mat-icon>Save</button> -->
+                    <!-- <button mat-fab extended color="primary" value="Save" *ngIf="btnSave" (click)="save()" [disabled]="formStudent.invalid"><mat-icon>save</mat-icon>Save</button> -->
                 
-                <button value="Update" *ngIf="!btnSave" (click)="save()" [disabled]="formStudent.invalid"
+                    <button value="Update" *ngIf="!btnSave" (click)="update()" [disabled]="formStudent.invalid"
                         class="disabled:opacity-50 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg flex items-center" ><mat-icon>update</mat-icon>Update</button>
-                <!-- <button mat-fab extended color="primary" value="Update" *ngIf="!btnSave" (click)="update()" [disabled]="formStudent.invalid"><mat-icon>update</mat-icon>Update</button> -->
+                    <!-- <button mat-fab extended color="primary" value="Update" *ngIf="!btnSave" (click)="update()" [disabled]="formStudent.invalid"><mat-icon>update</mat-icon>Update</button> -->
+                    
+                    <button value="Remove" *ngIf="!btnSave" (click)="remove()"
+                            class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg flex items-center" ><mat-icon>delete</mat-icon>Delete</button>
+                    <!-- <button mat-fab extended color="primary" value="Remove" *ngIf="!btnSave" (click)="remove()"><mat-icon>delete</mat-icon>Delete</button> -->
+                    
+                    
+                    <button value="Cancel" *ngIf="!btnSave" (click)="cancel()"
+                            class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg flex items-center" ><mat-icon>cancel</mat-icon>Cancel</button>
+                    <!-- <button mat-fab extended color="primary" value="Cancel" *ngIf="!btnSave" (click)="cancel()"><mat-icon>cancel</mat-icon>Cancel</button> -->
                 
-                <button value="Remove" *ngIf="!btnSave" (click)="remove()"
-                        class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg flex items-center" ><mat-icon>delete</mat-icon>Delete</button>
-                <!-- <button mat-fab extended color="primary" value="Remove" *ngIf="!btnSave" (click)="remove()"><mat-icon>delete</mat-icon>Delete</button> -->
-                
-                <button value="Cancel" *ngIf="!btnSave" (click)="cancel()"
-                        class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg flex items-center" ><mat-icon>cancel</mat-icon>Cancel</button>
-                <!-- <button mat-fab extended color="primary" value="Cancel" *ngIf="!btnSave" (click)="cancel()"><mat-icon>cancel</mat-icon>Cancel</button> -->
                 </div>
             </form>
         </div>
@@ -94,12 +98,12 @@
     <p></p>
     <p></p>
 
-
+<!--
     <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
-      <!-- <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+       <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
         <h1 class="title-font font-medium text-3xl text-white">Slow-carb next level shoindxgoitch ethical authentic, poko scenester</h1>
         <p class="leading-relaxed mt-4">Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock starladder roathse. Craies vegan tousled etsy austin.</p>
-      </div> -->
+      </div> 
       <div class="lg:w-2/6 md:w-1/2 bg-gray-800 bg-opacity-50 rounded-lg p-8 flex-1 flex-col md:ml-auto w-full mt-10 md:mt-0">
         <h2 class="text-white text-lg font-medium title-font mb-5">Grades Registration</h2>
         <div class="relative mb-4">
@@ -114,7 +118,7 @@
         <p class="text-xs mt-3">Literally you probably haven't heard of them jean shorts.</p>
       </div>
     </div>
-
+-->
     
   </section>
 

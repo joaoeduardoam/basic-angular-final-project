@@ -2,24 +2,24 @@
   "students": [
     {
       "id": 1,
-      "name": "Joaoasdas",
+      "name": "Joao",
       "grade1": 5,
       "grade2": 10
     },
     {
-      "id": 1,
+      "id": 1000,
       "name": "Amanda",
       "grade1": 7,
       "grade2": 8
     },
     {
-      "id": 1,
+      "id": 1001,
       "name": "Yan",
       "grade1": 4,
       "grade2": 5
     },
     {
-      "id": 1,
+      "id": 1002,
       "name": "Maria",
       "grade1": 1,
       "grade2": 10
@@ -59,12 +59,6 @@
       "name": "ccc",
       "grade1": 3,
       "grade2": 3
-    },
-    {
-      "id": 8,
-      "name": "ddd",
-      "grade1": 4,
-      "grade2": 4
     }
   ]
 }
