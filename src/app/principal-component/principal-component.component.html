@@ -1,14 +1,12 @@
-<!-- <div class="text-center mt-5" style="color: rgb(69, 69, 175)">
-    <h1 class="fs-1"><b>Grade Management System</b></h1>
-</div> -->
-<app-header-component/>
-<div>
-    <app-form-component (function)="save($event)" 
-                                (outputUpdatedIndex)="update($event)"
-                                (outputRemovedIndex)="remove($event)"
-                                [studentSelectedForm]="studentSelected"></app-form-component >
+
+<app-header-component />
+
+<app-form-component (function)="save($event)" 
+        (outputUpdatedIndex)="update($event)"
+        (outputRemovedIndex)="remove($event)"
+        [studentSelectedForm]="studentSelected"></app-form-component >
 
                                 
-    <app-table-component [vector]="students" (outputSelectedIndex)="selectStudent($event)"></app-table-component>
-</div>
+<app-table-component [vector]="students" (outputSelectedIndex)="selectStudent($event)"></app-table-component>
+
  

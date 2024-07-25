@@ -1,35 +1,10 @@
-<!-- <p>{{vector| json}}
-</p> -->
-<!-- <table class="table table-striped ">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Grade 1</th>
-            <th>Grade 2</th>
-            <th>Average</th>
-            <th>Select</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let v of vector; let idx = index">
-            <td>{{idx+1}}</td>
-            <td>{{v.name}}</td>
-            <td>{{v.grade1}}</td>
-            <td>{{v.grade2}}</td>
-            <td>{{v | average  | number:'1.1'}}</td>
-            <td><button mat-fab extended color="primary" value="Select" (click)="selectStudent(idx)"><mat-icon>view_list</mat-icon>Select</button></td>
-        </tr>
-    </tbody>
-</table> -->
-<section class="text-gray-400 bg-gray-900 body-font">
+
+<section class="text-gray-400 bg-gray-900 body-font m-0">
     <div class="container px-5 mx-auto">
-      <div class="flex flex-col text-center w-full mb-5">
-        <!-- <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Banh mi cornhole echo park skateboard authentic crucifix neutra tilde lyft biodiesel artisan direct trade mumblecore 3 wolf moon twee</p> -->
-      </div>
+      <p class="flex mb-5"> </p>
       <div class="lg:w-2/3 w-full mx-auto overflow-auto  bg-gray-800 bg-opacity-50 rounded-lg p-8 flex-1 flex-col md:ml-auto mt-10 md:mt-0">
         
-        <h1 class="text-white text-lg font-medium title-font mb-5">Grade Students</h1>
+        <h2 class="text-white text-lg font-medium title-font mb-5">Grades Students</h2>
 
         <table class="table-auto w-full text-center whitespace-no-wrap">
           <thead>
@@ -49,14 +24,13 @@
                 <td class="border-t-4 border-b-4 border-gray-800 px-4 py-3">{{v.grade1}}</td>
                 <td class="border-t-4 border-b-4 border-gray-800 px-4 py-3">{{v.grade2}}</td>
                 <td class="border-t-4 border-b-4 border-gray-800 px-4 py-3">{{v | average  | number:'1.1'}}</td>
-                <td class="border-t-4 border-b-4 border-gray-800 px-4 py-3">
+                <td class="border-t-4 border-b-4 border-gray-800 px-4 py-3 justify-center">
                     <button value="Select" (click)="selectStudent(idx)"
                             class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg flex items-center " ><mat-icon>view_list</mat-icon>Select</button>
-                    <!-- <input name="plan" type="radio"> -->
                 </td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-  </section>
+</section>

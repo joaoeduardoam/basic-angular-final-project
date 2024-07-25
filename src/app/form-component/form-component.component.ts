@@ -28,10 +28,8 @@ export class FormComponentComponent implements OnChanges{
 
 
     ngOnChanges (): void {
-      // Caso o objeto personSelectedForm tenha a característica
-      // namediferente de null, executa a ação
+      
       if (this.studentSelectedForm.name != null) {
-      // Envia as características do objeto studentSelectedForm para o formPerson
 
       this.selectStudent(this.studentSelectedForm.id);
 
@@ -41,7 +39,6 @@ export class FormComponentComponent implements OnChanges{
 
 
     
-  
 
 
   //Button Visibility
@@ -70,8 +67,6 @@ export class FormComponentComponent implements OnChanges{
 
   cancel() {
 
-    //this.outputUpdatedIndex.emit(new Person());
-    //this.personSelectedForm = new Person();
     this.formStudent.reset();    
     this.btnSave = true;
     
@@ -82,8 +77,6 @@ export class FormComponentComponent implements OnChanges{
     this.function.emit(this.formStudent.value as Student);
     this.formStudent.reset();
   }
-
-
 
 
 

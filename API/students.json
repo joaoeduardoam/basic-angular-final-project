@@ -26,9 +26,9 @@
     },
     {
       "id": 6,
-      "name": "bbb",
-      "grade1": 0,
-      "grade2": 0
+      "name": "ccc",
+      "grade1": 3,
+      "grade2": 3.2
     }
   ]
 }
