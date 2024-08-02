@@ -16,13 +16,13 @@ export class FormComponentComponent implements OnChanges{
 
   
 
-  @Output() function = new EventEmitter<Student>();
+  @Output() outputSaveStudent = new EventEmitter<Student>();
 
   @Input() studentSelectedForm:Student = new Student();
 
-  @Output() outputUpdatedIndex = new EventEmitter<Student>();
+  @Output() outputUpdateStudent = new EventEmitter<Student>();
 
-  @Output() outputRemovedIndex = new EventEmitter<number>();
+  @Output() outputRemoveIndex = new EventEmitter<number>();
 
 
 
@@ -53,28 +53,28 @@ export class FormComponentComponent implements OnChanges{
 
 
   remove() {
-    this.outputRemovedIndex.emit(this.formStudent.value.id);
+    this.outputRemoveIndex.emit(this.formStudent.value.id);
     this.btnSave = true;
     this.formStudent.reset();
   }
 
   update() {
     
-    this.outputUpdatedIndex.emit(this.formStudent.value as Student);
+    this.outputUpdateStudent.emit(this.formStudent.value as Student);
     this.btnSave = true;
     this.formStudent.reset();
   }
 
   cancel() {
 
+    this.studentSelectedForm = new Student();
     this.formStudent.reset();    
-    this.btnSave = true;
+    this.btnSave = true;    
     
-    
-    }
+  }
   
   save() {
-    this.function.emit(this.formStudent.value as Student);
+    this.outputSaveStudent.emit(this.formStudent.value as Student);
     this.formStudent.reset();
   }
 

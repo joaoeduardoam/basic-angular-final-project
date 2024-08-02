@@ -1,12 +1,14 @@
 
-<app-header-component />
+<app-header-component/>
 
-<app-form-component (function)="save($event)" 
-        (outputUpdatedIndex)="update($event)"
-        (outputRemovedIndex)="remove($event)"
-        [studentSelectedForm]="studentSelected"></app-form-component >
-
+<app-form-component     
+        (outputSaveStudent)="save($event)" 
+        (outputUpdateStudent)="update($event)"
+        (outputRemoveIndex)="remove($event)"
+        [studentSelectedForm]="studentSelected"
+/>
                                 
-<app-table-component [vector]="students" (outputSelectedIndex)="selectStudent($event)"></app-table-component>
+<app-table-component [vector]="students" (outputSelectedIndex)="selectStudent($event)"/>
+
 
  

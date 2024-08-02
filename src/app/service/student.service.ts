@@ -30,12 +30,12 @@ export class StudentService {
     return this.http.get<Student[]>(this.url);
   }
 
-  selectPerson(index:number):Observable<Student>{
+  // selectPerson(index:number):Observable<Student>{
     
-    let persons: Observable<Student[]> = this.http.get<Student[]>(this.url);
-    return persons.pipe(map(personArray => personArray[index]));
+  //   let persons: Observable<Student[]> = this.http.get<Student[]>(this.url);
+  //   return persons.pipe(map(personArray => personArray[index]));
     
-  }
+  // }
 
   // Método para cadastrar students
   save(obj:Student):Observable<Student>{

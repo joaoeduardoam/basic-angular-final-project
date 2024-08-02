@@ -4,7 +4,7 @@
       "id": 1,
       "name": "João",
       "grade1": 5,
-      "grade2": 10
+      "grade2": 7
     },
     {
       "id": 1000,
@@ -22,13 +22,13 @@
       "id": 1002,
       "name": "Maria",
       "grade1": 1,
-      "grade2": 10
+      "grade2": 9.8
     },
     {
       "id": 6,
-      "name": "ccc",
+      "name": "Teste",
       "grade1": 3,
-      "grade2": 3.2
+      "grade2": 0.1
     }
   ]
 }
